@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registro.Registro"
+    android:background="@drawable/fondoregister"
+    android:orientation="vertical"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent"
+        android:scrollbarThumbVertical="@drawable/scroll">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10sp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="15sp"
+
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grandient"
+                android:fontFamily="@font/dynapuff"
+                android:gravity="center"
+                android:padding="5sp"
+                android:text="@string/title"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dynapuff"
+                android:text="@string/registro"
+                android:textColor="#fe0001"
+                android:textSize="30sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginTop="15sp"
+                android:ems="15"
+                android:hint="@string/name"
+                android:textColor="#0c30ff"
+                android:textColorHint="#0c30ff"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@null"
+                app:hintAnimationEnabled="true"
+                android:fontFamily="@font/dynapuff">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dynapuff"
+                    android:inputType="textPersonName"
+                    android:textColor="#0c30ff"
+                    android:textColorHint="#0c30ff" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/tlUsername"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginTop="15sp"
+                android:ems="15"
+                android:hint="@string/correo"
+                android:textColor="#0511F2"
+                android:textColorHint="#0511F2"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@null"
+                app:hintAnimationEnabled="true"
+                android:fontFamily="@font/dynapuff">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dynapuff"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#0511F2"
+                    android:textColorHint="#0511F2" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dynapuff"
+                android:text="@string/title_genero"
+                android:textColor="#0d6ffc"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/check_box_masculino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:fontFamily="@font/dynapuff"
+                    android:text="@string/txt_masculino"
+                    android:textColor="#0d6ffc"
+                    tools:text="Masculino" />
+
+                <CheckBox
+                    android:id="@+id/check_box_femenino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:fontFamily="@font/dynapuff"
+                    android:text="@string/txt_femenino"
+                    android:textColor="#0d6ffc" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/check_box_otro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:fontFamily="@font/dynapuff"
+                    android:text="@string/otro"
+                    android:textColor="#0d6ffc" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/dynapuff"
+                android:text=""
+                android:textColor="@color/red"
+                android:textSize="15sp"
+                app:hintAnimationEnabled="true"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@null"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_weight="1"
+                tools:ignore="InefficientWeight"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="10sp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="15"
+                    android:hint="@string/fecha_de_nacimiento"
+                    android:textColor="#0c30ff"
+                    android:textColorHint="#0c30ff"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusBottomEnd="10dp"
+                    app:boxCornerRadiusBottomStart="10dp"
+                    app:boxCornerRadiusTopEnd="10dp"
+                    app:boxCornerRadiusTopStart="10dp"
+                    app:errorEnabled="true"
+                    app:errorIconDrawable="@null"
+                    app:hintAnimationEnabled="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    tools:ignore="NestedWeights"
+                    android:fontFamily="@font/dynapuff">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fechaNacimiento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dynapuff"
+                        android:inputType="date"
+                        android:textColor="#0c30ff"
+                        android:textColorHint="#0c30ff"
+                        android:enabled="false"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btnSeleccionarFecha"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/date"
+                    app:civ_border_color="#FF000000"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:fontFamily="@font/dynapuff"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginTop="15sp"
+                android:ems="15"
+                android:hint="@string/password"
+                android:textColor="#0c30ff"
+                android:textColorHint="#0c30ff"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/black"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@null"
+                android:fontFamily="@font/dynapuff">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dynapuff"
+                    android:inputType="textPassword"
+                    android:textColor="#0c30ff"
+                    android:textColorHint="#0c30ff" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginTop="15sp"
+                android:ems="15"
+                android:hint="@string/password_confirm"
+                android:textColor="#0c30ff"
+                android:textColorHint="#0c30ff"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/black"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@null"
+                android:fontFamily="@font/dynapuff">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dynapuff"
+                    android:inputType="textPassword"
+                    android:textColor="#0c30ff"
+                    android:textColorHint="#0c30ff" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <CheckBox
+                android:id="@+id/terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dynapuff"
+                android:text="@string/terminos"
+                android:textColor="#2e3337" />
+
+            <TextView
+                android:id="@+id/tvCheckBoxTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/dynapuff"
+                android:text=""
+                android:textColor="@color/red"
+                android:textSize="15sp"
+                app:hintAnimationEnabled="true"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@null"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="30sp">
+
+
+                <ImageView
+                    android:layout_width="70sp"
+                    android:layout_height="70sp"
+                    android:src="@drawable/doctor_auxilitos"
+                    android:contentDescription="@string/imagen_of_doctor" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btn_register"
+                        style="@style/Widget.Material3.Button.ElevatedButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10sp"
+                        android:backgroundTint="@color/green"
+                        android:fontFamily="@font/dynapuff"
+                        android:text="@string/registrarse"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                    <Button
+                        android:id="@+id/btn_regresar"
+                        style="@style/Widget.Material3.Button.ElevatedButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10sp"
+                        android:backgroundTint="#FF0050"
+                        android:fontFamily="@font/dynapuff"
+                        android:text="@string/regresar"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="70sp"
+                    android:layout_height="70sp"
+                    android:src="@drawable/img_corazon_cura"
+                    android:contentDescription="@string/imagen_of_doctor"
+                    android:layout_marginStart="10sp"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".content.CreditosActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/fondo_ajustes"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="30sp"
+            android:background="@drawable/bordernavigation">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                tools:ignore="UselessParent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btn_return"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/regresar"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#376A6363"
+                    android:layout_marginEnd="20dp"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cr_ditos"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="NestedScrolling">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="30sp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/link1"
+                        android:autoLink="web"
+                        android:linksClickable="true"
+                        android:textColorLink="#0000FF"
+                        android:padding="5sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/link2"
+                        android:autoLink="web"
+                        android:linksClickable="true"
+                        android:textColorLink="#0000FF"
+                        android:padding="5sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/linkn3"
+                        android:autoLink="web"
+                        android:linksClickable="true"
+                        android:textColorLink="#0000FF"
+                        android:padding="5sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/link4"
+                        android:autoLink="web"
+                        android:linksClickable="true"
+                        android:textColorLink="#0000FF"
+                        android:padding="5sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/link5"
+                        android:autoLink="web"
+                        android:linksClickable="true"
+                        android:textColorLink="#0000FF"
+                        android:padding="5sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/link6"
+                        android:autoLink="web"
+                        android:linksClickable="true"
+                        android:textColorLink="#0000FF"
+                        android:padding="5sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/link7"
+                        android:autoLink="web"
+                        android:linksClickable="true"
+                        android:textColorLink="#0000FF"
+                        android:padding="5sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/link8"
+                        android:autoLink="web"
+                        android:linksClickable="true"
+                        android:textColorLink="#0000FF"
+                        android:padding="5sp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/link9"
+                        android:autoLink="web"
+                        android:linksClickable="true"
+                        android:textColorLink="#0000FF"
+                        android:padding="5sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/link10"
+                        android:autoLink="web"
+                        android:linksClickable="true"
+                        android:textColorLink="#0000FF"
+                        android:padding="5sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/link11"
+                        android:autoLink="web"
+                        android:linksClickable="true"
+                        android:textColorLink="#0000FF"
+                        android:padding="5sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/link12"
+                        android:autoLink="web"
+                        android:linksClickable="true"
+                        android:textColorLink="#0000FF"
+                        android:padding="5sp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/link13"
+                        android:autoLink="web"
+                        android:linksClickable="true"
+                        android:textColorLink="#0000FF"
+                        android:padding="5sp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/link14"
+                        android:autoLink="web"
+                        android:linksClickable="true"
+                        android:textColorLink="#0000FF"
+                        android:padding="5sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/link15"
+                        android:autoLink="web"
+                        android:linksClickable="true"
+                        android:textColorLink="#0000FF"
+                        android:padding="5sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/link16"
+                        android:autoLink="web"
+                        android:linksClickable="true"
+                        android:textColorLink="#0000FF"
+                        android:padding="5sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/link17"
+                        android:autoLink="web"
+                        android:linksClickable="true"
+                        android:textColorLink="#0000FF"
+                        android:padding="5sp"/>
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

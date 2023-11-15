@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="rounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+        <item name="color">@color/white</item>
+    </style>
+
+    <style name="actionbar" parent="Theme.Material3.Light">
+        <item name="android:fontFamily">@font/dynapuff</item>
+    </style>
+
+    <style name="noActionbar" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:fontFamily">@font/dynapuff</item>
+    </style>
+
+
+    <style name="My_TextAppearance_Toolbar" parent="@style/TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/dynapuff</item>
+        <item name="android:fontFamily">@font/dynapuff</item>
+
+    </style>
+
+    <!-- Toolbar -->
+    <style name="MyToolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="titleTextAppearance">@style/My_TextAppearance_Toolbar</item>
+    </style>
+
+    <!--Splash Screen-->
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/logo</item>
+    </style>
+
+</resources>

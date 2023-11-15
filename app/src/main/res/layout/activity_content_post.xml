@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".content.ContentPostActivity"
+    android:orientation="vertical"
+    android:background="@drawable/fondoregister2"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent"
+        android:scrollbarThumbVertical="@drawable/scroll">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/logo"
+                    android:layout_marginTop="0dp"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="5sp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dynapuff"
+                    android:text="@string/contenido_de_primero_auxilitos"
+                    android:textColor="#0F71F2"
+                    android:textSize="23sp"
+                    android:gravity="center"
+                    />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/tlUsername"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:layout_marginTop="15sp"
+                    android:ems="15"
+                    android:hint="@string/titulo"
+                    android:textColor="#0511F2"
+                    android:textColorHint="#0511F2"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusBottomEnd="10dp"
+                    app:boxCornerRadiusBottomStart="10dp"
+                    app:boxCornerRadiusTopEnd="10dp"
+                    app:boxCornerRadiusTopStart="10dp"
+                    app:hintAnimationEnabled="true"
+                    app:errorEnabled="true"
+                    app:errorIconDrawable="@null"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dynapuff"
+                        android:inputType="textEmailAddress"
+                        android:textColor="#0511F2"
+                        android:textColorHint="#0511F2" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10sp">
+
+                    <ImageButton
+                        android:id="@+id/imageUrl"
+                        android:layout_width="200sp"
+                        android:layout_height="200sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/carga4"
+                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/preview_image_content_description" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/btn_choose_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/carga"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="#376A6363"
+                        android:layout_gravity="center"
+                        />
+
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="NestedScrolling">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tlDescription"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:layout_marginTop="15sp"
+                        android:hint="@string/descripcion"
+                        android:textColor="#0511F2"
+                        android:textColorHint="#0511F2"
+                        app:boxBackgroundMode="outline"
+                        app:boxCornerRadiusBottomEnd="10dp"
+                        app:boxCornerRadiusBottomStart="10dp"
+                        app:boxCornerRadiusTopEnd="10dp"
+                        app:boxCornerRadiusTopStart="10dp"
+                        app:hintAnimationEnabled="true"
+                        app:errorEnabled="true"
+                        app:errorIconDrawable="@null">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/dynapuff"
+                            android:textColor="#0511F2"
+                            android:textColorHint="#0511F2" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </ScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/btn_return"
+                        style="@style/Widget.Material3.Button.ElevatedButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dynapuff"
+                        android:contentDescription="@string/subir_contenido"
+                        android:layout_marginTop="10sp"
+                        android:backgroundTint="#0C6EFC"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="10sp"
+                        android:src="@drawable/cancelar"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/btn_upload_content"
+                        style="@style/Widget.Material3.Button.ElevatedButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dynapuff"
+                        android:contentDescription="@string/subir_contenido"
+                        android:layout_marginTop="10sp"
+                        android:backgroundTint="#0C6EFC"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="10sp"
+                        android:src="@drawable/carga2"
+                        />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

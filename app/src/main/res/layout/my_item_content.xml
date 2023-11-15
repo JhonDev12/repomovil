@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="10dp"
+    android:id="@+id/my_item_layout">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="8dp"
+        card_view:cardCornerRadius="16dp"
+        card_view:cardBackgroundColor="#FFFFFF"
+        android:layout_marginBottom="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mi_contenido"
+                android:textAlignment="center" />
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_launcher_foreground"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerInside"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                tools:ignore="ContentDescription" />
+
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/this_is_a_author"
+                android:layout_gravity="bottom"
+                android:layout_margin="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/btn_update_content"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/edit_content"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#376A6363"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/editar_contenido" />
+
+            </LinearLayout>
+
+            <!--Button update-->
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

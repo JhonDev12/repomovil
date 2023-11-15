@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settings.MisionVisionActivity"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/vision2"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent"
+        android:scrollbarThumbVertical="@drawable/scroll">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btn_return"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/regresar"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#376A6363"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    tools:ignore="RtlHardcoded" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logo"
+                    android:layout_centerInParent="true"
+                    tools:ignore="ContentDescription"/>
+            </RelativeLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="8dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                card_view:cardCornerRadius="16dp"
+                android:layout_marginBottom="100dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mision"
+                    android:textSize="20sp"
+                    android:layout_margin="5sp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:layout_marginTop="10sp"
+                    tools:ignore="DisableBaselineAlignment">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="0.6">
+
+
+
+                        <!-- Contenido de la parte izquierda (60%) -->
+                        <ScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            tools:ignore="NestedScrolling"
+                            android:scrollbarThumbVertical="@drawable/scroll">
+
+                            <TextView
+                                android:id="@+id/textViewLeft"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_mision"
+                                android:gravity="start"
+                                android:layout_marginTop="5sp"/>
+
+                        </ScrollView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="0.4">
+
+                        <!-- Contenido de la parte derecha (40%) -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/mision"
+                            android:layout_gravity="center_vertical"
+                            android:scaleType="centerInside"
+                            android:layout_marginTop="20dp"
+                            tools:ignore="ContentDescription,NestedWeights" />
+
+                        <!-- Agrega más vistas según tus necesidades para la parte derecha -->
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="8dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                card_view:cardCornerRadius="16dp"
+                android:layout_marginBottom="100dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vision"
+                    android:textAlignment="textEnd"
+                    android:layout_margin="25dp"
+                    android:textSize="20sp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:layout_marginTop="10sp"
+                    tools:ignore="DisableBaselineAlignment">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="0.4">
+
+                        <!-- Contenido de la parte izquierda (60%) -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/vision"
+                            android:layout_gravity="center_vertical"
+                            android:scaleType="centerInside"
+                            android:layout_marginTop="20dp"
+                            tools:ignore="ContentDescription,NestedWeights" />
+
+
+                        <!-- Agrega más vistas según tus necesidades para la parte izquierda -->
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="0.6">
+
+                        <!-- Contenido de la parte derecha (40%) -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_vision"
+                            android:gravity="start"
+                            android:layout_marginTop="25dp"/>
+
+                        <!-- Agrega más vistas según tus necesidades para la parte derecha -->
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
